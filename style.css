@@ -1,77 +1,191 @@
-.nav {
-    background-color: rgb(203, 161, 203);
-
+.body {
+    background-color: teal;
+    color: lavender;
+    transition: 2s ease;
 }
-.h1  {
-    background-color: rgb(128, 93, 187);
+
+.h1 {
+    text-align: center;
+}
+
+.div1a {
+   margin: 0 auto;
+   width: 300px;
+    border: 5px solid indianred;
+   border-radius: 20px 20px 20px 20px;
+   transition: transform 2s ease;
+ }
+
+ .div1a:hover {
+    transform:scale(1.1)
+
+ }
+
+.div2 {
+   display: flex;
+   flex-direction: row;
+   color: lightcoral;
+   margin-top: 10px;
+}
+
+.div2a {
+    margin:auto;
+    width: 200px;
+    border: 3px solid indianred;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    background-color: rgb(184, 221, 184);
+    transition: transform 2s ease;
+    transition: background-color 2s ease;
+}
+
+.div2a:hover {
+    transform: scale(1.1);
+    background-color: lemonchiffon;
+}
+
+.div3 {
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 900px 50px 50px;
+    flex-direction: row;
+    height: 250px;
+
+   
 }
 
-.l1 {
-    padding: 0px;
-    border: 5px;
-    margin: 0px;
-    border-color: lightpink;
-    border-style: solid;
-    list-style: none;
-    display: inline-block;
-    flex-direction: row;
-    justify-content: end;
-    margin-right: 10px;
+.div3a {
+    margin: 0 auto;
+    border: 5px solid indianred;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
+    Transition: transform 2s ease;
     
 }
-
-.ul1  {
-    display: flex;
-    flex-direction: row;
-    border-style: solid;
+.div3a:hover {
+    transform: scale(1.1);
 }
 
-.body  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-
-}
-
-.h2 {
-    flex:1;
-    padding: 20px;
-    margin-right: 500px;
-    border-right: 2px dashed #000;
-    color:greenyellow;
-
-}
-
-.p1 {
-    flex:1;
-    padding:20px;
-}
-
-.img {
+.img3a {
     max-width: 100%;
-    height: 100px;
-    display: block;
-    margin: auto;
-
+    max-height: 100%;
+    height: auto;
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    }
+
+.div3b {
+    margin: 0 auto;
+    border: 5px solid indianred;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
+    Transition: transform 2s ease;
+}
+
+.div3b:hover {
+    transform: scale(1.1);
+}
+
+.img3b {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.div4 {
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+}
+
+.div4a {
+    margin: 0 auto;
+    border: 5px solid indianred;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
+    Transition: transform 2s ease;
+}
+
+.div3b:hover {
+    transform: scale(1.1);
+}
+.img4a {
+    max-width: 100%;
+    max-height: auto;
+
+    display: block;
+    border-radius: 20px 20px 20px 20px;
+    Transition: transform 2s ease;
+}
+.div4a:hover {
+    transform: scale(1.1);
+}
+
+.div5 {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+}
+
+.div5a {
+    margin: 0 auto;
+    border: 5px solid indianred;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
+    Transition: transform 2s ease;
+}
+.div5a:hover {
+    transform: scale(1.1);
+}
+
+.img5a {
+    max-width: 100%;
+    max-height: auto;
+    height: auto;
+    display: block;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
     
-    .div1 { grid-area: 1 / 1 / 3 / 4; }
-    .div2 { grid-area: 4 / 1 / 5 / 2; }
-    .div3 { grid-area: 4 / 3 / 5 / 4; }
-    .div4 { grid-area: 5 / 1 / 6 / 2; }
-    .div5 { grid-area: 5 / 3 / 6 / 4; }
+}
+
+@media screen and (max-width: 700px) {
+    .div2a {
+        background-color: paleturquoise;
+    }
+    .div2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .div3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .div5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .body {
+        background-color: khaki;
+        color: black;
+    }
+    .div4 {
+        margin: 0 auto;
+}
+}
