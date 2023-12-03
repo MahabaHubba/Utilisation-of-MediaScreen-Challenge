@@ -14,11 +14,12 @@
     border: 5px solid indianred;
    border-radius: 20px 20px 20px 20px;
    transition: transform 2s ease;
+   transition: box-shadow 2s ease;
  }
 
  .div1a:hover {
-    transform:scale(1.1)
-
+    transform:scale(1.1);
+    box-shadow: 5px 5px 10px rgba (0, 0, 0, 5)
  }
 
 .div2 {
@@ -48,9 +49,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    height: 250px;
-
-   
+    height: 250px;   
 }
 
 .div3a {
@@ -63,10 +62,19 @@
     background-color: white;
     color: black;
     Transition: transform 2s ease;
+    transition: box-shadow 2s ease;
     
 }
 .div3a:hover {
     transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#div3a {
+    scroll-behavior: smooth;
 }
 
 .img3a {
@@ -99,7 +107,8 @@
 
 .div4 {
     margin: 0 auto;
-    display: block;
+    display: flex;
+    flex-direction: row;
     height: 250px;
 }
 
@@ -117,6 +126,7 @@
 
 .div3b:hover {
     transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgb(rgb(189, 63, 63), rgb(97, 180, 97), rgb(49, 49, 141));
 }
 .img4a {
     max-width: 100%;
