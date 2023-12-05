@@ -69,11 +69,12 @@
     transform: scale(1.1);
 }
 
-html {
+#scrolll {
     scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 
-#div3a {
+html {
     scroll-behavior: smooth;
 }
 
